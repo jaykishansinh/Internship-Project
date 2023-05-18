@@ -1,0 +1,76 @@
+{% extends 'store/basic.html' %}
+
+{% block title%} {{product.product_name}} - Food Mania {% endblock %}
+{% block css %}
+    #cont {
+        min-height : 553px;
+    }
+    body{
+        background-color:#F3F3F3;
+    }
+{% endblock %}
+{% block body %}
+<div class="mt-2">&nbsp;
+    <a href="/store" class="active text-dark" style="font-size:25px;">
+      <i class="material-icons">&#xe5e0;</i>
+      <span>Back</span>
+    </a>
+</div>
+
+<div class="modal-body" id="cont" tabindex="-1" role="dialog"  aria-hidden="true" style="background-color:#F3F3F3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+   
+    <div class="container ml-5">
+        <img src="/media/{{product.image}}" class="ml-4 pt-4" width="300px" height="300px">
+    </div>
+<br>
+    <div class="container md-4">
+        <h5>{{product.product_name}}</h5>
+        <p><b style="color:red">Rs. {{product.price}} </b></p>
+        <p>{{product.desc}}</p>
+<!--        <button class="btn btn-primary mx-2">Add to Cart</button>-->
+        <div class='alert alert-info justify-content-center'>
+            <center>Click <a href='/store/search/?search={{product.product_name}}' class='alert-link'>Here</a> to Order.</center>
+        </div></div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+console.log('working');
+if(localStorage.getItem('cart') == null){
+var cart = {};
+}
+
+else{
+cart = JSON.parse(localStorage.getItem('cart'));
+document.getElementById('cart').innerHTML = Object.keys(cart).length;
+}
+
+$('.cart').click(function(){
+
+console.log('clicked');
+var idstr = this.id.toString();
+console.log(idstr);
+if (cart[idstr] != undefined){
+cart[idstr] = cart[idstr] + 1;
+}
+else{
+cart[idstr] = 1;
+}
+console.log(cart);
+localStorage.setItem('cart', JSON.stringify(cart));
+document.getElementById('cart').innerHTML = Object.keys(cart).length;
+});
+$('#popcart').popover()
+
+document.getElementById("popcart").setAttribute('data-content', '<h5>Cart</h5>');
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+{% endblock %}

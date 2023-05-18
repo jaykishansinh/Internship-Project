@@ -1,0 +1,387 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+{% block extrastyle%}
+<link rel="stylesheet" href="{% static 'store/assets/css/bootstrapad.css'%}" />
+<link rel="stylesheet" href="{% static 'store/assets/css/stylead.css'%}" />
+{%endblock %}
+  
+ <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> 
+  <title>Electronicgadgets</title>
+  </head>
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section ">       
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg justify-content-center">
+              <a class="navbar-brand justify-content-center">
+                <span >
+                  Electronicgadgets
+                </span>
+              </a>
+          </div>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="slider_section ">
+        <div id="customCarousel1">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Welcome to our shop
+                      </h1>
+                      <p>
+                        Welcome to our shop, where you'll find the latest electronic gadgets to elevate your digital lifestyle.
+                      </p>
+                      <a href="/store">
+                       Let's Visit
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="{% static 'store/assets/img/slider-img.png'%}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end slider section -->
+    </div>
+  
+  
+    <!-- product section -->
+   <section class="product_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Our Products
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/h2.jpeg'%}" alt="">
+                <a href="/store" class="add_cart_btn">
+                  <span>
+                    Add To Cart
+                  </span>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pride Wireless
+                </h5>
+                <div class="product_info">
+                  <h5>
+                    <span>Rs.</span> 700
+                  </h5>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/h1.jpg'%}" alt="">
+                <a href="/store" class="add_cart_btn">
+                  <span>
+                    Add To Cart
+                  </span>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Gaming Mouse
+                </h5>
+                <div class="product_info">
+                  <h5>
+                    <span>Rs.</span> 800
+                  </h5>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/h3.jpg'%}" alt="">
+                <a href="/store" class="add_cart_btn">
+                  <span>
+                    Add To Cart
+                  </span>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Wireless keyboard
+                </h5>
+                <div class="product_info">
+                  <h5>
+                    <span>Rs.</span> 2000
+                  </h5>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/h4.jpg'%}" alt="">
+                <a href="/store" class="add_cart_btn">
+                  <span>
+                    Add To Cart
+                  </span>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Earbuds with Neckband
+                </h5>
+                <div class="product_info">
+                  <h5>
+                    <span>Rs.</span> 800
+                  </h5>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/h5.jpg'%}" alt="">
+                <a href="/store" class="add_cart_btn">
+                  <span>
+                    Add To Cart
+                  </span>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Hydra Keyboard
+                </h5>
+                <div class="product_info">
+                  <h5>
+                    <span>Rs.</span> 1800
+                  </h5>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/h6.jpg'%}" alt="">
+                <a href="/store" class="add_cart_btn">
+                  <span>
+                    Add To Cart
+                  </span>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Router
+                </h5>
+                <div class="product_info">
+                  <h5>
+                    <span>Rs.</span> 2100
+                  </h5>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_box">
+          <a href="/store/about" class="view_more-link">
+            View More
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end product section -->
+  
+    <!-- about section -->
+    <section class="about_section">
+      <div class="container-fluid  ">
+        <div class="row">
+          <div class="col-md-5 ml-auto">
+            <div class="detail-box pr-md-3">
+              <div class="heading_container">
+                <h2>
+                  We Provide Best For You
+                </h2>
+              </div>
+              <p>
+                At our electronic gadgets shop, we are committed to providing you with the best products and services that cater to your technological needs. With a vast array of cutting-edge electronic devices, we strive to offer you an exceptional shopping experience.
+                Quality is our top priority, and we take great care in curating a selection of the finest electronic gadgets available in the market. Whether you're searching for the latest smartphone, a high-performance laptop, a smart home device, or a gaming console, we have it all. Our team of experts thoroughly researches and tests each product to ensure its functionality, durability, and overall performance, guaranteeing that you receive only the best.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 px-0">
+            <div class="img-box">
+              <img src="{% static 'store/assets/img/about-img.jpg'%}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+  
+    <!-- why us section -->
+    <section class="why_us_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Why Choose Us
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/w1.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Fast Delivery
+                </h5>
+                <p>
+                
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/w2.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Free Shiping
+                </h5>
+                <p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'store/assets/img/w3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Best Quality
+                </h5>
+                <p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- end why us section -->
+  
+  
+    <!-- client section -->
+    <section class="client_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            What Says Our Customers
+          </h2>
+        </div>
+      </div>
+      <div class="client_container ">
+        <div id="carouselExample2Controls" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="box">
+                  <div class="detail-box">
+                    <p>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                      "I have been a loyal customer of this electronic gadgets shop for years, and I couldn't be happier with their products and services. The staff members are extremely knowledgeable and always go above and beyond to help me find the perfect gadget. Their recommendations have never disappointed me, and I appreciate the personalized attention they provide. The quality of their products is top-notch, and I have never had any issues with any of my purchases. I highly recommend this shop to anyone in need of the latest electronic gadgets."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end client section -->
+  
+    <!-- info section -->
+    <section class="info_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_contact">
+              <h5>
+                <a href="" class="navbar-brand">
+                  <span>
+                    Electronicgadgets
+                  </span>
+                </a>
+              </h5>
+              <p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                Address
+              </p>
+              <p>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                +91 9409045150
+              </p>
+              <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                jaykishansinh8@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_info">
+              <h5>
+                Information
+              </h5>
+              <p>
+                Learn about our shipping options, estimated delivery times, and international shipping availability            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
